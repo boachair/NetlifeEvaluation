@@ -1,0 +1,7 @@
+c:\users\administrator\documents\visual studio 2010\Projects\TestProgram\TestProgram\bin\Debug\TestProgram.exe
+c:\users\administrator\documents\visual studio 2010\Projects\TestProgram\TestProgram\bin\Debug\TestProgram.pdb
+c:\users\administrator\documents\visual studio 2010\Projects\TestProgram\TestProgram\obj\x86\Debug\TestProgram.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2010\Projects\TestProgram\TestProgram\obj\x86\Debug\TestProgram.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2010\Projects\TestProgram\TestProgram\obj\x86\Debug\TestProgram.exe
+c:\users\administrator\documents\visual studio 2010\Projects\TestProgram\TestProgram\obj\x86\Debug\TestProgram.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\TestProgram\TestProgram\obj\x86\Debug\TestProgram.Form_Main.resources
