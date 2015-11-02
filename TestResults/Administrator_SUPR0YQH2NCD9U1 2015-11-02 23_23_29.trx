@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="a1d259d0-6110-4274-a048-be02e705c601" name="Administrator@SUPR0YQH2NCD9U1 2015-11-02 23:23:29" runUser="SUPR0YQH2NCD9U1\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="240445e5-865b-40d4-8f50-e872729b599d">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_SUPR0YQH2NCD9U1 2015-11-02 23_23_29" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-11-02T23:23:29.3491287+01:00" queuing="2015-11-02T23:23:29.4191327+01:00" start="2015-11-02T23:23:29.4381338+01:00" finish="2015-11-02T23:23:29.8631581+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="10" executed="10" passed="10" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="RightUpperToValidateGridCost" storage="c:\users\administrator\documents\visual studio 2010\projects\testprogramtest\testprogramtest\bin\debug\testprogramtest.dll" id="2976dd0b-d21f-6574-b667-796568a57d2d">
+      <Execution id="ea2d3740-3788-4e29-b7d9-b50725db3359" />
+      <TestMethod codeBase="C:/Users/Administrator/Documents/Visual Studio 2010/Projects/TestProgramTest/TestProgramTest/bin/Debug/TestProgramTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProgramTest.CostUnitTest, TestProgramTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RightUpperToValidateGridCost" />
+    </UnitTest>
+    <UnitTest name="EmptyStringToValidateCost" storage="c:\users\administrator\documents\visual studio 2010\projects\testprogramtest\testprogramtest\bin\debug\testprogramtest.dll" id="efc64666-ea7d-377d-c907-111833f3714e">
+      <Execution id="e6fae051-08e4-48f0-a4c8-10c0fd782908" />
+      <TestMethod codeBase="C:/Users/Administrator/Documents/Visual Studio 2010/Projects/TestProgramTest/TestProgramTest/bin/Debug/TestProgramTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProgramTest.CostUnitTest, TestProgramTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EmptyStringToValidateCost" />
+    </UnitTest>
+    <UnitTest name="MultipleLineValidategetShortestPath" storage="c:\users\administrator\documents\visual studio 2010\projects\testprogramtest\testprogramtest\bin\debug\testprogramtest.dll" id="54ef24d0-f60f-fce8-855c-9a453d522eeb">
+      <Execution id="a527fa70-52d5-49cd-b97b-eb7df02e43bc" />
+      <TestMethod codeBase="C:/Users/Administrator/Documents/Visual Studio 2010/Projects/TestProgramTest/TestProgramTest/bin/Debug/TestProgramTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProgramTest.CostUnitTest, TestProgramTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MultipleLineValidategetShortestPath" />
+    </UnitTest>
+    <UnitTest name="OneWordValidategetShortestPath" storage="c:\users\administrator\documents\visual studio 2010\projects\testprogramtest\testprogramtest\bin\debug\testprogramtest.dll" id="92028def-e9c5-14a1-9f6d-85ca537724eb">
+      <Execution id="afd3ae88-bed9-4616-a6d7-0266f19ab078" />
+      <TestMethod codeBase="C:/Users/Administrator/Documents/Visual Studio 2010/Projects/TestProgramTest/TestProgramTest/bin/Debug/TestProgramTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProgramTest.CostUnitTest, TestProgramTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="OneWordValidategetShortestPath" />
+    </UnitTest>
+    <UnitTest name="RightLowerToValidateGridCost" storage="c:\users\administrator\documents\visual studio 2010\projects\testprogramtest\testprogramtest\bin\debug\testprogramtest.dll" id="9cff946d-eb6b-f4f2-4a83-5052e5ff0894">
+      <Execution id="32896f33-849f-4757-b887-7cb678c50fd1" />
+      <TestMethod codeBase="C:/Users/Administrator/Documents/Visual Studio 2010/Projects/TestProgramTest/TestProgramTest/bin/Debug/TestProgramTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProgramTest.CostUnitTest, TestProgramTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RightLowerToValidateGridCost" />
+    </UnitTest>
+    <UnitTest name="LeftLowerToValidateGridCost" storage="c:\users\administrator\documents\visual studio 2010\projects\testprogramtest\testprogramtest\bin\debug\testprogramtest.dll" id="4f35c712-83cc-a443-5c78-e0a9313a8a52">
+      <Execution id="7e02dfc6-37e8-4c30-9a6d-3724f5bbda97" />
+      <TestMethod codeBase="C:/Users/Administrator/Documents/Visual Studio 2010/Projects/TestProgramTest/TestProgramTest/bin/Debug/TestProgramTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProgramTest.CostUnitTest, TestProgramTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LeftLowerToValidateGridCost" />
+    </UnitTest>
+    <UnitTest name="OneLineValidategetShortestPath" storage="c:\users\administrator\documents\visual studio 2010\projects\testprogramtest\testprogramtest\bin\debug\testprogramtest.dll" id="5ded34d3-24a6-cec6-c117-97dd382d9d39">
+      <Execution id="7023b17b-84ba-43d4-a62b-9e55a172c52d" />
+      <TestMethod codeBase="C:/Users/Administrator/Documents/Visual Studio 2010/Projects/TestProgramTest/TestProgramTest/bin/Debug/TestProgramTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProgramTest.CostUnitTest, TestProgramTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="OneLineValidategetShortestPath" />
+    </UnitTest>
+    <UnitTest name="MiddleToValidateGridCost" storage="c:\users\administrator\documents\visual studio 2010\projects\testprogramtest\testprogramtest\bin\debug\testprogramtest.dll" id="8d2cfb56-3689-d49f-2b75-3ac9413dcc0c">
+      <Execution id="615f5aae-60a8-4147-b71c-fc194e67c281" />
+      <TestMethod codeBase="C:/Users/Administrator/Documents/Visual Studio 2010/Projects/TestProgramTest/TestProgramTest/bin/Debug/TestProgramTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProgramTest.CostUnitTest, TestProgramTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MiddleToValidateGridCost" />
+    </UnitTest>
+    <UnitTest name="NormalStringToValidateCost" storage="c:\users\administrator\documents\visual studio 2010\projects\testprogramtest\testprogramtest\bin\debug\testprogramtest.dll" id="0e3a1f54-c0a8-84b4-cfbc-87efb047e47a">
+      <Execution id="89dfc080-b8c5-4cf1-9be0-66f844713c30" />
+      <TestMethod codeBase="C:/Users/Administrator/Documents/Visual Studio 2010/Projects/TestProgramTest/TestProgramTest/bin/Debug/TestProgramTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProgramTest.CostUnitTest, TestProgramTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NormalStringToValidateCost" />
+    </UnitTest>
+    <UnitTest name="LeftUpperToValidateGridCost" storage="c:\users\administrator\documents\visual studio 2010\projects\testprogramtest\testprogramtest\bin\debug\testprogramtest.dll" id="67ec9f9f-1378-542d-dfd4-f146dab9ee91">
+      <Execution id="23c99801-6c3e-47f3-9369-fd5bcb1a4ea3" />
+      <TestMethod codeBase="C:/Users/Administrator/Documents/Visual Studio 2010/Projects/TestProgramTest/TestProgramTest/bin/Debug/TestProgramTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProgramTest.CostUnitTest, TestProgramTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LeftUpperToValidateGridCost" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0e3a1f54-c0a8-84b4-cfbc-87efb047e47a" executionId="89dfc080-b8c5-4cf1-9be0-66f844713c30" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="efc64666-ea7d-377d-c907-111833f3714e" executionId="e6fae051-08e4-48f0-a4c8-10c0fd782908" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="67ec9f9f-1378-542d-dfd4-f146dab9ee91" executionId="23c99801-6c3e-47f3-9369-fd5bcb1a4ea3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2976dd0b-d21f-6574-b667-796568a57d2d" executionId="ea2d3740-3788-4e29-b7d9-b50725db3359" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4f35c712-83cc-a443-5c78-e0a9313a8a52" executionId="7e02dfc6-37e8-4c30-9a6d-3724f5bbda97" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9cff946d-eb6b-f4f2-4a83-5052e5ff0894" executionId="32896f33-849f-4757-b887-7cb678c50fd1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8d2cfb56-3689-d49f-2b75-3ac9413dcc0c" executionId="615f5aae-60a8-4147-b71c-fc194e67c281" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92028def-e9c5-14a1-9f6d-85ca537724eb" executionId="afd3ae88-bed9-4616-a6d7-0266f19ab078" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5ded34d3-24a6-cec6-c117-97dd382d9d39" executionId="7023b17b-84ba-43d4-a62b-9e55a172c52d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="54ef24d0-f60f-fce8-855c-9a453d522eeb" executionId="a527fa70-52d5-49cd-b97b-eb7df02e43bc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="89dfc080-b8c5-4cf1-9be0-66f844713c30" testId="0e3a1f54-c0a8-84b4-cfbc-87efb047e47a" testName="NormalStringToValidateCost" computerName="SUPR0YQH2NCD9U1" duration="00:00:00.0189531" startTime="2015-11-02T23:23:29.4521346+01:00" endTime="2015-11-02T23:23:29.7751530+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="89dfc080-b8c5-4cf1-9be0-66f844713c30">
+    </UnitTestResult>
+    <UnitTestResult executionId="e6fae051-08e4-48f0-a4c8-10c0fd782908" testId="efc64666-ea7d-377d-c907-111833f3714e" testName="EmptyStringToValidateCost" computerName="SUPR0YQH2NCD9U1" duration="00:00:00.0002793" startTime="2015-11-02T23:23:29.7761531+01:00" endTime="2015-11-02T23:23:29.7811534+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e6fae051-08e4-48f0-a4c8-10c0fd782908">
+    </UnitTestResult>
+    <UnitTestResult executionId="23c99801-6c3e-47f3-9369-fd5bcb1a4ea3" testId="67ec9f9f-1378-542d-dfd4-f146dab9ee91" testName="LeftUpperToValidateGridCost" computerName="SUPR0YQH2NCD9U1" duration="00:00:00.0014305" startTime="2015-11-02T23:23:29.7831535+01:00" endTime="2015-11-02T23:23:29.7891538+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="23c99801-6c3e-47f3-9369-fd5bcb1a4ea3">
+    </UnitTestResult>
+    <UnitTestResult executionId="ea2d3740-3788-4e29-b7d9-b50725db3359" testId="2976dd0b-d21f-6574-b667-796568a57d2d" testName="RightUpperToValidateGridCost" computerName="SUPR0YQH2NCD9U1" duration="00:00:00.0010017" startTime="2015-11-02T23:23:29.7911540+01:00" endTime="2015-11-02T23:23:29.7971543+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ea2d3740-3788-4e29-b7d9-b50725db3359">
+    </UnitTestResult>
+    <UnitTestResult executionId="7e02dfc6-37e8-4c30-9a6d-3724f5bbda97" testId="4f35c712-83cc-a443-5c78-e0a9313a8a52" testName="LeftLowerToValidateGridCost" computerName="SUPR0YQH2NCD9U1" duration="00:00:00.0010177" startTime="2015-11-02T23:23:29.7981544+01:00" endTime="2015-11-02T23:23:29.8041547+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7e02dfc6-37e8-4c30-9a6d-3724f5bbda97">
+    </UnitTestResult>
+    <UnitTestResult executionId="32896f33-849f-4757-b887-7cb678c50fd1" testId="9cff946d-eb6b-f4f2-4a83-5052e5ff0894" testName="RightLowerToValidateGridCost" computerName="SUPR0YQH2NCD9U1" duration="00:00:00.0010200" startTime="2015-11-02T23:23:29.8061548+01:00" endTime="2015-11-02T23:23:29.8121552+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="32896f33-849f-4757-b887-7cb678c50fd1">
+    </UnitTestResult>
+    <UnitTestResult executionId="615f5aae-60a8-4147-b71c-fc194e67c281" testId="8d2cfb56-3689-d49f-2b75-3ac9413dcc0c" testName="MiddleToValidateGridCost" computerName="SUPR0YQH2NCD9U1" duration="00:00:00.0018787" startTime="2015-11-02T23:23:29.8141553+01:00" endTime="2015-11-02T23:23:29.8201556+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="615f5aae-60a8-4147-b71c-fc194e67c281">
+    </UnitTestResult>
+    <UnitTestResult executionId="afd3ae88-bed9-4616-a6d7-0266f19ab078" testId="92028def-e9c5-14a1-9f6d-85ca537724eb" testName="OneWordValidategetShortestPath" computerName="SUPR0YQH2NCD9U1" duration="00:00:00.0017128" startTime="2015-11-02T23:23:29.8231558+01:00" endTime="2015-11-02T23:23:29.8301562+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="afd3ae88-bed9-4616-a6d7-0266f19ab078">
+    </UnitTestResult>
+    <UnitTestResult executionId="7023b17b-84ba-43d4-a62b-9e55a172c52d" testId="5ded34d3-24a6-cec6-c117-97dd382d9d39" testName="OneLineValidategetShortestPath" computerName="SUPR0YQH2NCD9U1" duration="00:00:00.0012429" startTime="2015-11-02T23:23:29.8321563+01:00" endTime="2015-11-02T23:23:29.8391567+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7023b17b-84ba-43d4-a62b-9e55a172c52d">
+    </UnitTestResult>
+    <UnitTestResult executionId="a527fa70-52d5-49cd-b97b-eb7df02e43bc" testId="54ef24d0-f60f-fce8-855c-9a453d522eeb" testName="MultipleLineValidategetShortestPath" computerName="SUPR0YQH2NCD9U1" duration="00:00:00.0013832" startTime="2015-11-02T23:23:29.8401568+01:00" endTime="2015-11-02T23:23:29.8461571+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a527fa70-52d5-49cd-b97b-eb7df02e43bc">
+    </UnitTestResult>
+  </Results>
+</TestRun>
