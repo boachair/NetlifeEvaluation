@@ -1,0 +1,165 @@
+如果Testing Framework被安装到了目标机器，可以添加引用ArtOfTest.WebAii.dll到工程文件里，步骤如下：
+1. 选择VS里面的已有工程或新建一个工程
+2. 右键点击“解决方案资源管理器”里面的“引用”，选择“添加引用”
+3. 选择Testing Framework安装目录下的bin目录里面的ArtOfTest.WebAii.dll
+4. 点击OK完成
+
+首先保证已经启动了一个Manager对象：
+// Initialize the settings
+Settings mySettings = new Settings();
+
+// Set the default browser
+mySettings.Web.DefaultBrowser = BrowserType.InternetExplorer;
+
+// Create the manager object
+Manager myManager = new Manager(mySettings);
+
+// Start the manager
+myManager.Start();
+
+// Launch a new browser instance. [This will launch an IE instance given the setting above]
+myManager.LaunchNewBrowser();
+
+// Navigate to a certain web page
+myManager.ActiveBrowser.NavigateTo("http://www.google.com");
+
+// Perform your automation actions.
+Element mybtn = myManager.ActiveBrowser.Find.ByTagIndex("input", 3);
+myManager.ActiveBrowser.Actions.Click(mybtn);
+
+// Shut-down the manager and do all clean-up
+myManager.Dispose();
+
+Manager对象有所有的方法：浏览器自动化，对象识别，log记录和DOM遍历。
+
+浏览器自动化动作（DOM和UI）有三种：
+-浏览器控制：比如导航到URL，退后，向前，刷新，等待直到准备好，滚动窗体
+-DOM自动化：直接执行DOM对象动作，包括SetText, Check, Click, Select Drop Down, Scroll to visible, Invoke event, Invoke Script 
+-纯UI自动化：Desktop对象动作，比如模拟真实鼠标和键盘动作。
+// *** Browser control below
+
+// Some test cases may require that all cookies be cleared ahead of time.  
+// WebAii does not care but depending on your environment and your specific
+// test case you may care.   
+ActiveBrowser.ClearCache(ArtOfTest.WebAii.Core.BrowserCacheType.Cookies);
+
+// Navigate to an explicit URL   
+ActiveBrowser.NavigateTo("http://www.google.com");
+
+// Navigate to a relative URL. The preceeding ~ means to use the
+// baseURL setting stored in the app.config file   
+ActiveBrowser.NavigateTo("~/videosearch");
+
+// Let's check the title   
+string pageTitle = ActiveBrowser.PageTitle;
+Assert.AreEqual("Video Search Page", pageTitle, "Actual page title = \"{0}\"", pageTitle);    
+
+// Backup to the previous web page
+ActiveBrowser.GoBack();
+
+// Return to the next web page after previous   
+ActiveBrowser.GoForward();
+
+// Refresh the current web page   
+ActiveBrowser.Refresh();
+
+// After performing a mouse click you may need to explicitly wait   
+// for the browser to be ready. You very rarely would need to
+// call this function when using the Actions methods.   
+Desktop.Mouse.Click(MouseClickType.LeftClick, 300, 275);
+ActiveBrowser.WaitUntilReady();
+
+// Scroll the browser window in order to make some element visible   
+ActiveBrowser.ScrollBy(225, 170);      // Scrolls right 220 and down 170 pixels
+ActiveBrowser.ScrollBy(-225, -170);    // Scrolls left 200 and up 170 pixels    
+
+// *** Find elements below   
+
+// an input textbox  
+Element input1 = ActiveBrowser.Find.ById("input1");   
+
+// a textarea
+Element textArea = ActiveBrowser.Find.ById("textarea1");    
+
+// an input radio button
+Element inputradio = ActiveBrowser.Find.ById("inputradio");    
+
+// an input check box
+Element inputcheck = ActiveBrowser.Find.ById("inputcheck");    
+
+// an input dropdown
+Element selection = ActiveBrowser.Find.ById("selection");  
+
+
+// *** DOM actions below
+
+// set the text of the input1 textbox to 'test1'
+ActiveBrowser.Actions.SetText(input1, "test1");    
+
+// set the text of the textarea1 to 'test2'
+ActiveBrowser.Actions.SetText(textArea, "test2");    
+
+// set the input radio button to selected
+ActiveBrowser.Actions.Check(inputradio, true);    
+
+// set the input checkbox to selected
+ActiveBrowser.Actions.Check(inputcheck, true);
+
+// set the dropdown to item index 4
+ActiveBrowser.Actions.SelectDropDown(selection, 4);    
+
+// set the dropdown to item with text='one1'
+ActiveBrowser.Actions.SelectDropDown(selection, "one1");    
+
+// set the dropdown to item with value='test'
+ActiveBrowser.Actions.SelectDropDown(selection, "test", true);    
+
+// the currently selected text should be the dropdown selection
+string textSelected = ActiveBrowser.GetSelectedText();   
+Assert.AreEqual("test", textSelected, "Actual test is \"{0}\"", textSelected);
+
+经验1：要使Manager.LaunchNewBrowser(BrowserType.InternetExplorer)顺利通过，而不出现TimeoutException：wait for condition has timed out
+就要以管理员身份来运行VS
+
+
+将EXCEL文件转化成CSV（逗号分隔）的文件，用文件流读取(等价就是读取一个txt文本文件)。
+先引用命名空间:using System.Text;和using System.IO;
+FileStream fs = new FileStream("d:\\Customer.csv", FileMode.Open, FileAccess.Read, FileShare.None);
+StreamReader sr = new StreamReader(fs, System.Text.Encoding.GetEncoding(936));
+ 
+string str = "";
+string s = Console.ReadLine();
+while (str != null)
+{    str = sr.ReadLine();
+     string[] xu = new String[2];
+     xu = str.Split(',');
+     string ser = xu[0]; 
+     string dse = xu[1];                if (ser == s)
+     { Console.WriteLine(dse);break;
+     }
+}   sr.Close();
+
+Microsoft.Jet.OLEDB.4.0和Microsoft.ACE.OLEDB.12.0的区别
+在通过ADO对Excel对象进行连接时（此时Excel则认为是一个数据源），需要配置对Excel数据源对应的连接串，这个连接串中包括了Provider信息（其实类似对数据库进行连接操作时，都需要指定连接字符串），以下是一行连接串源代码：
+strConnString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & strExcelFilePath & ";Extended Properties=Excel 12.0"
+这里的Provider使用了Microsoft.ACE.OLEDB.12.0，其实除了Microsoft.ACE.OLEDB.12.0，还有Microsoft.Jet.OLEDB.4.0，它们俩者之间有什么联系和区别呢：
+ 
+共同点：都是做为连接Excel对象的接口引擎
+不同点：
+对于不同的Excel版本，有两种接口可供选择：Microsoft.Jet.OLEDB.4.0（以下简称 Jet 引擎）和Microsoft.ACE.OLEDB.12.0（以下简称 ACE 引擎）。
+Jet 引擎，可以访问 Office 97-2003，但不能访问 Office 2007。
+ACE 引擎是随 Office 2007 一起发布的数据库连接组件，既可以访问 Office 2007，也可以访问 Office 97-2003。
+另外：Microsoft.ACE.OLEDB.12.0 可以访问正在打开的 Excel 文件，而 Microsoft.Jet.OLEDB.4.0 是不可以的。
+所以，在使用不同版本的office时，要注意使用合适的引擎。
+
+
+C#里非静态的方法和属性要求对象引用。
+
+I was using just HtmlInputFile.upload earlier which used to open the upload dialog and close immediately. 
+When I used your code as below, it opens the dialog, types the file name path and closes without clicking OPEN button. 
+Is there anything else I need to do here? 
+
+
+
+
+
